@@ -1,0 +1,170 @@
+@-webkit-keyframes facecursorleaves1{
+  0% { top: 50%; }
+  25% { top: 60%; }
+  75% { top: 40%; }
+  100% { top: 50%; }
+}
+@-moz-keyframes facecursorleaves1{
+  0% { top: 50%; }
+  25% { top: 60%; }
+  75% { top: 40%; }
+  100% { top: 50%; }
+}
+@-ms-keyframes facecursorleaves1{
+  0% { top: 50%; }
+  25% { top: 60%; }
+  75% { top: 40%; }
+  100% { top: 50%; }
+}
+@-o-keyframes facecursorleaves1{
+  0% { top: 50%; }
+  25% { top: 60%; }
+  75% { top: 40%; }
+  100% { top: 50%; }
+}
+@keyframes facecursorleaves1{
+  0% { top: 50%; }
+  25% { top: 60%; }
+  75% { top: 40%; }
+  100% { top: 50%; }
+}
+
+
+@-webkit-keyframes facecursorleaves2{
+  0% { top: 50%; }
+  25% { top: 55%; }
+  75% { top: 45%; }
+  100% { top: 50%; }
+}
+@-moz-keyframes facecursorleaves2{
+  0% { top: 50%; }
+  25% { top: 55%; }
+  75% { top: 45%; }
+  100% { top: 50%; }
+}
+@-ms-keyframes facecursorleaves2{
+  0% { top: 50%; }
+  25% { top: 55%; }
+  75% { top: 45%; }
+  100% { top: 50%; }
+}
+@-o-keyframes facecursorleaves2{
+  0% { top: 50%; }
+  25% { top: 55%; }
+  75% { top: 45%; }
+  100% { top: 50%; }
+}
+@keyframes facecursorleaves2{
+  0% { top: 50%; }
+  25% { top: 55%; }
+  75% { top: 45%; }
+  100% { top: 50%; }
+}
+
+
+.face-cursor #layer-1 img, .face-cursor #layer-1-shdaow img{
+  -webkit-animation: facecursorleaves1 30s linear infinite;
+  -moz-animation: facecursorleaves1 30s linear infinite;
+  -ms-animation: facecursorleaves1 30s linear infinite;
+  -o-animation: facecursorleaves1 30s linear infinite;
+  animation: facecursorleaves1 30s linear infinite;
+}
+
+.face-cursor #layer-2 img, .face-cursor #layer-2-shdaow img{
+  -webkit-animation: facecursorleaves1 27s linear infinite;
+  -moz-animation: facecursorleaves1 27s linear infinite;
+  -ms-animation: facecursorleaves1 27s linear infinite;
+  -o-animation: facecursorleaves1 27s linear infinite;
+  animation: facecursorleaves1 27s linear infinite;
+}
+
+.face-cursor #layer-3 img, .face-cursor #layer-3-shdaow img{
+  -webkit-animation: facecursorleaves1 32s linear infinite;
+  -moz-animation: facecursorleaves1 32s linear infinite;
+  -ms-animation: facecursorleaves1 32s linear infinite;
+  -o-animation: facecursorleaves1 32s linear infinite;
+  animation: facecursorleaves1 32s linear infinite;
+}
+
+.face-cursor #layer-4 img, .face-cursor #layer-4-shdaow img{
+  -webkit-animation: facecursorleaves1 25s linear infinite;
+  -moz-animation: facecursorleaves1 25s linear infinite;
+  -ms-animation: facecursorleaves1 25s linear infinite;
+  -o-animation: facecursorleaves1 25s linear infinite;
+  animation: facecursorleaves1 25s linear infinite;
+}
+
+.face-cursor #layer-5 img, .face-cursor #layer-5-shdaow img{
+  -webkit-animation: facecursorleaves2 23s linear infinite;
+  -moz-animation: facecursorleaves2 23s linear infinite;
+  -ms-animation: facecursorleaves2 23s linear infinite;
+  -o-animation: facecursorleaves2 23s linear infinite;
+  animation: facecursorleaves2 23s linear infinite;
+}
+
+.face-cursor #layer-6 img, .face-cursor #layer-6-shdaow img{
+  -webkit-animation: facecursorleaves1 29s linear infinite;
+  -moz-animation: facecursorleaves1 29s linear infinite;
+  -ms-animation: facecursorleaves1 29s linear infinite;
+  -o-animation: facecursorleaves1 29s linear infinite;
+  animation: facecursorleaves1 29s linear infinite;
+}
+
+.face-cursor #layer-7 img, .face-cursor #layer-7-shdaow img{
+  -webkit-animation: facecursorleaves1 31s linear infinite;
+  -moz-animation: facecursorleaves1 31s linear infinite;
+  -ms-animation: facecursorleaves1 31s linear infinite;
+  -o-animation: facecursorleaves1 31s linear infinite;
+  animation: facecursorleaves1 31s linear infinite;
+}
+
+.face-cursor #layer-8 img, .face-cursor #layer-8-shdaow img{
+  -webkit-animation: facecursorleaves1 40s linear infinite;
+  -moz-animation: facecursorleaves1 40s linear infinite;
+  -ms-animation: facecursorleaves1 40s linear infinite;
+  -o-animation: facecursorleaves1 40s linear infinite;
+  animation: facecursorleaves1 40s linear infinite;
+}
+
+.face-cursor #layer-9 img, .face-cursor #layer-9-shdaow img{
+  -webkit-animation: facecursorleaves2 18s linear infinite;
+  -moz-animation: facecursorleaves2 18s linear infinite;
+  -ms-animation: facecursorleaves2 18s linear infinite;
+  -o-animation: facecursorleaves2 18s linear infinite;
+  animation: facecursorleaves2 18s linear infinite;
+}
+
+.face-cursor #layer-10 img, .face-cursor #layer-10-shdaow img{
+  -webkit-animation: facecursorleaves2 22s linear infinite;
+  -moz-animation: facecursorleaves2 22s linear infinite;
+  -ms-animation: facecursorleaves2 22s linear infinite;
+  -o-animation: facecursorleaves2 22s linear infinite;
+  animation: facecursorleaves2 22s linear infinite;
+}
+
+.face-cursor #layer-11 img, .face-cursor #layer-11-shdaow img{
+  -webkit-animation: facecursorleaves2 25s linear infinite;
+  -moz-animation: facecursorleaves2 25s linear infinite;
+  -ms-animation: facecursorleaves2 25s linear infinite;
+  -o-animation: facecursorleaves2 25s linear infinite;
+  animation: facecursorleaves2 25s linear infinite;
+}
+
+.face-cursor #layer-12 img, .face-cursor #layer-12-shdaow img{
+  -webkit-animation: facecursorleaves2 30s linear infinite;
+  -moz-animation: facecursorleaves2 30s linear infinite;
+  -ms-animation: facecursorleaves2 30s linear infinite;
+  -o-animation: facecursorleaves2 30s linear infinite;
+  animation: facecursorleaves2 30s linear infinite;
+}
+
+
+/*
+.something{
+  -webkit-transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+  -moz-transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+  -ms-transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+  -o-transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+  transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+}
+*/
