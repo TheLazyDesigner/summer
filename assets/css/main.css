@@ -1,0 +1,160 @@
+/*--------------------------------------------------------- GENERAL ---------------------------------------------------------*/
+*{
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:after, *:before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+img{ border: none; }
+
+ul, ul li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bg-section{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.center-vertical, .center-horizontal{ position: absolute !important; }
+.center-vertical{
+  top: 50% !important;
+  left: 0 !important;
+  -webkit-transform: translateY(-50%) translate3d(0,0,0);
+  transform: translateY(-50%) translate3d(0,0,0);
+}
+.center-horizontal{
+  top: 0 !important;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) translate3d(0,0,0);
+  transform: translateX(-50%) translate3d(0,0,0);
+}
+.center-vertical.center-horizontal{
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
+  transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
+}
+
+/*--------------------------------------------------------- COLORS & BACKGROUNDS ---------------------------------------------------------*/
+html, body{ background-color: #F2C7C6 !important; }
+
+.bg-section{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------- PARALLAX ---------------------------------------------------------*/
+#home-banner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-parallax,
+.scene-parallax li{
+  width: 100% !important;
+  height: 100% !important;
+}
+.scene-parallax img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  
+  -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
+  -moz-transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
+  transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
+}
+
+#logo img{ width: 50%; }
+.leaves img,
+.flower img{
+  width: 200%;
+  height: auto;
+}
+.flower img{ position: absolute; }
+
+#flower-1 img{ top: 0; }
+#flower-2 img{ top: 98%; }
+#flower-3 img{ top: 120%; }
+#flower-4 img{ 
+  top: 85%;
+  -webkit-transform-origin: 20% 0;
+  transform-origin: 20% 0;
+}
+#flower-5 img{ top: 75%; }
+#flower-6 img{ top: -15%; }
+#flower-7 img{ top: -25%; }
+
+#flower-01 img{ top: -8%; }
+#flower-02 img{ top: 0%; }
+#flower-03 img{ top: 22%; }
+#flower-04 img{ top: 68%; }
+
+#flower-001 img{
+  top: 80%;
+  -webkit-transform-origin: -20% 0;
+  transform-origin: -20% 0;
+}
+#flower-002 img{ top: 5%; }
+
+.butterfly_container{
+  position: absolute;
+  left: 120%;
+  top: 60%;
+  z-index: 1000;
+}
+
+/*--------------------------------------------------------- CANVAS LEAVES DISTORTION ---------------------------------------------------------*/
+.canvas-leaves{
+	position: absolute;
+	overflow: hidden;
+  top: 0;
+  left: 0;
+	width: 100%;
+	height: 100vh;
+}
+.canvas-leaves canvas{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/*--------------------------------------------------------- OPACITY ---------------------------------------------------------*/
+.opacity-0{
+  opacity: 0.0;
+  filter:alpha(opacity=0);
+  -ms-filter:"prodig:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -moz-opacity: 0.0;
+  -khtml-opacity: 0.0;
+}
+.opacity-100{
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+  -ms-filter:"prodig:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -moz-opacity: 1.0;
+  -khtml-opacity: 1.0;
+}

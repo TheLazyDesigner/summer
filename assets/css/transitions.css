@@ -1,0 +1,92 @@
+@-webkit-keyframes flower3{
+  0% { -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  50% { -webkit-transform: rotate(3deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  100% { -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+}
+@keyframes flower3{
+  0% { transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  50% { transform: rotate(3deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  100% { transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+}
+#flower-3 img{
+  -webkit-animation: flower3 30s ease-in-out infinite;
+  animation: flower3 30s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes flower4{
+  0% { -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  50% { -webkit-transform: rotate(8deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  100% { -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+}
+@keyframes flower4{
+  0% { transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  50% { transform: rotate(8deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  100% { transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+}
+#flower-4 img{
+  -webkit-animation: flower4 25s ease-in-out infinite;
+  animation: flower4 25s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes flower7{
+  0% { -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  50% { -webkit-transform: rotate(3deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  100% { -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+}
+@keyframes flower7{
+  0% { transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  50% { transform: rotate(3deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  100% { transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+}
+#flower-7 img{
+  -webkit-animation: flower7 20s ease-in-out infinite;
+  animation: flower7 20s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes flower001{
+  0% { -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  50% { -webkit-transform: rotate(6deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  100% { -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+}
+@keyframes flower001{
+  0% { transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  50% { transform: rotate(6deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+  100% { transform: rotate(0deg) translateX(-50%) translateY(-50%) translate3d(0,0,0); }
+}
+#flower-001 img{
+  -webkit-animation: flower001 20s ease-in-out infinite;
+  animation: flower001 20s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes butterfly{
+  0% { -webkit-transform: rotate(-45deg) translate3d(0,0,0); left: 120%; top: 60%; }
+  50% { -webkit-transform: rotate(-65deg) translate3d(0,0,0); left: -20%; top: 30%; }
+  51% { -webkit-transform: rotate(65deg) translate3d(0,0,0); left: -20%; top: 80%; }
+  100% { -webkit-transform: rotate(45deg) translate3d(0,0,0); left: 120%; top: 50%; }
+}
+@keyframes butterfly{
+  0% { transform: rotate(-45deg) translate3d(0,0,0); left: 120%; top: 60%; }
+  25% { transform: rotate(-55deg) translate3d(0,0,0); }
+  50% { transform: rotate(-65deg) translate3d(0,0,0); left: -20%; top: 30%; }
+  51% { transform: rotate(65deg) translate3d(0,0,0); left: -20%; top: 80%; }
+  100% { transform: rotate(45deg) translate3d(0,0,0); left: 120%; top: 50%; }
+}
+.butterfly_container{
+  -webkit-animation: butterfly 20s ease-in-out infinite;
+  animation: butterfly 20s ease-in-out infinite;
+}
+
+
+/*
+.something{
+  -webkit-transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+  -moz-transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+  -ms-transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+  -o-transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+  transition: all 2s cubic-bezier(0.4, 1, 0.4, 1);
+}
+*/
