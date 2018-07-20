@@ -27,123 +27,170 @@ ul, ul li{
   list-style: none;
 }
 
-.bg-section{
+.border-radius,
+#circle,
+#sun{
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  border-radius: 1000px;
+}
+
+/*--------------------------------------------------------- COLORS & BACKGROUNDS ---------------------------------------------------------*/
+html, body{ background-color: #FFECD0 !important; }
+#circle{ background-color: #EF785F; }
+#sky{ background-color: #FFBA8E; }
+#sun{ background-color: #EE2737; }
+#road{
+  background: #FFBB8E;
+  background: linear-gradient(90deg, rgba(255,187,142,1) 0%, rgba(255,236,208,1) 100%);
+}
+.road-line{ background-color: #373332; }
+
+/*--------------------------------------------------------- PARALLAX ---------------------------------------------------------*/
+#home-banner,
+#home-banner ul,
+#home-banner li{
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
 }
-
-.center-vertical, .center-horizontal{ position: absolute !important; }
-.center-vertical{
-  top: 50% !important;
-  left: 0 !important;
-  -webkit-transform: translateY(-50%) translate3d(0,0,0);
-  transform: translateY(-50%) translate3d(0,0,0);
-}
-.center-horizontal{
-  top: 0 !important;
-  left: 50% !important;
-  -webkit-transform: translateX(-50%) translate3d(0,0,0);
-  transform: translateX(-50%) translate3d(0,0,0);
-}
-.center-vertical.center-horizontal{
-  top: 50% !important;
-  left: 50% !important;
-  -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
-  transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
-}
-
-/*--------------------------------------------------------- COLORS & BACKGROUNDS ---------------------------------------------------------*/
-html, body{ background-color: #F2C7C6 !important; }
-
-.bg-section{
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*--------------------------------------------------------- PARALLAX ---------------------------------------------------------*/
-#home-banner{
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.scene-parallax,
-.scene-parallax li{
-  width: 100% !important;
-  height: 100% !important;
-}
-.scene-parallax img{
+#home-banner img,
+#circle,
+#clouds{
+  display: block;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  
+  left: 50% !important;
+  top: 50% !important;
   -webkit-transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
   -moz-transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
   -o-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
   transform: translateX(-50%) translateY(-50%) translate3d(0,0,0);
+  overflow: hidden;
 }
 
-#logo img{ width: 50%; }
-.leaves img,
-.flower img{
+#circle,
+#clouds{ width: 35% !important; }
+#sky,
+#road{
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+#sky{
+  top: 0;
+  height: 50%;
+  z-index: 50;
+}
+#sky:after{
+  content: "";
+  display: block;
+  background: url(../images/sky_waves.png) repeat-x center top;
+  background-size: 45px 7px;
   width: 200%;
+  height: 14px;
+  position: absolute;
+  left: -50%;
+  top: 100%;
+}
+#sun,
+#sun-reflet{ position: absolute; }
+#sun{
+  left: 73%;
+  top: 27%;
+  width: 18%;
+  z-index: 100;
+}
+#sun-reflet{
+  left: 69%;
+  top: 42%;
+  width: 26%;
+  perspective: 150px;
+  z-index: 0;
+}
+#sun-reflet-perspective,
+#sun-reflet img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: rotateX(50deg) translateX(-50%) translateY(-50%) translate3d(0,0,0);
+  -moz-transform: rotateX(50deg) translateX(-50%) translateY(-50%) translate3d(0,0,0);
+  -o-transform: rotateX(50deg) translateX(-50%) translateY(-50%);
+  -ms-transform: rotateX(50deg) translateX(-50%) translateY(-50%) translate3d(0,0,0);
+  transform: rotateX(50deg) translateX(-50%) translateY(-50%) translate3d(0,0,0);
+}
+#sun-reflet-perspective{ height: 100%; }
+#sun-reflet img{
+  display: block;
+  height: auto;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.cloud{
+  position: absolute;
+  z-index: 120;
+}
+#cloud-1{
+  left: 45%;
+  top: 5%;
+  width: 35%;
+  height: 131px;
+}
+#cloud-2{
+  left: 20%;
+  top: 10%;
+  width: 10%;
+  height: 49px;
+}
+.cloud img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: auto;
 }
-.flower img{ position: absolute; }
-
-#flower-1 img{ top: 0; }
-#flower-2 img{ top: 98%; }
-#flower-3 img{ top: 120%; }
-#flower-4 img{ 
-  top: 85%;
-  -webkit-transform-origin: 20% 0;
-  transform-origin: 20% 0;
+#road{
+  bottom: 0;
+  height: 33%;
 }
-#flower-5 img{ top: 75%; }
-#flower-6 img{ top: -15%; }
-#flower-7 img{ top: -25%; }
-
-#flower-01 img{ top: -8%; }
-#flower-02 img{ top: 0%; }
-#flower-03 img{ top: 22%; }
-#flower-04 img{ top: 68%; }
-
-#flower-001 img{
-  top: 80%;
-  -webkit-transform-origin: -20% 0;
-  transform-origin: -20% 0;
-}
-#flower-002 img{ top: 5%; }
-
-.butterfly_container{
-  position: absolute;
-  left: 120%;
-  top: 60%;
-  z-index: 1000;
-}
-
-/*--------------------------------------------------------- CANVAS LEAVES DISTORTION ---------------------------------------------------------*/
-.canvas-leaves{
-	position: absolute;
-	overflow: hidden;
-  top: 0;
-  left: 0;
-	width: 100%;
-	height: 100vh;
-}
-.canvas-leaves canvas{
-  display: block;
+#road-line-wrapper{
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  width: 200%;
+  height: 3%;
+  min-height: 2px;
+  max-height: 10px;
+}
+.road-line{
+  float: left;
+  width: 12.5%;
+  height: 100%;
+  margin-left: 12.5%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#van-wrapper img{
+  width: 80%;
+  height: auto;
+}
+#camper{
+  -webkit-transform-origin: -31% 18%;
+  -moz-transform-origin: -31% 18%;
+  -o-transform-origin: -31% 18%;
+  -ms-transform-origin: -31% 18%;
+  transform-origin: -31% 18%;
 }
 
 /*--------------------------------------------------------- OPACITY ---------------------------------------------------------*/
+/*
 .opacity-0{
   opacity: 0.0;
   filter:alpha(opacity=0);
@@ -158,3 +205,4 @@ html, body{ background-color: #F2C7C6 !important; }
   -moz-opacity: 1.0;
   -khtml-opacity: 1.0;
 }
+*/

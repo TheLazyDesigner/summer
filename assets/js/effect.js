@@ -1,38 +1,24 @@
 var windoww = 0;
 var windowh = 0;
 
-function sceneParallax(){
-/*--------------------------------------------------------- PARALLAX ---------------------------------------------------------*/
-  if ( $('.scene-parallax').length ) {
-    var $sceneparallax = $('.scene-parallax');
+var square = 0;
 
-  	(resize = function() {
-  		$sceneparallax[0].style.width = window.innerWidth + 'px';
-  		$sceneparallax[0].style.height = window.innerHeight + 'px';
-  	})();
-
-  	window.onresize = _.debounce(resize, 200);
-  	window.onscroll = _.debounce(resize, 200);
-
-  	$sceneparallax.parallax();
-  }
+function fitAll(){
+/*--------------------------------------------------------- CIRCLE SIZE ---------------------------------------------------------*/
+  $('.square').each(function() {
+    square = $(this).width();
+    $(this).css('height', square);
+  });
 }
 
 $(window).on( 'load', function(){
-  $('body').addClass('page-loading-step1');
-  setTimeout(function () {
-    $('body').addClass('page-loading-step2');
-  }, 400 );
-  setTimeout(function () {
-    $('body').addClass('page-loading-step3');
-  }, 800 );
-  setTimeout(function () {
-    $('body').addClass('page-loading-step4');
-  }, 1200 );
+/*--------------------------------------------------------- fitAll ---------------------------------------------------------*/
+  $(window).on( 'resize', function(){
+    fitAll();
+  });
 });
 
-
 $(document).ready(function(){
-/*--------------------------------------------------------- PARALLAX ---------------------------------------------------------*/
-  sceneParallax();
+/*--------------------------------------------------------- fitAll ---------------------------------------------------------*/
+  fitAll();
 });
